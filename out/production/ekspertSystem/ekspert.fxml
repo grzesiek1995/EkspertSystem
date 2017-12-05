@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <ListView fx:id="buldinglist" layoutX="46.0" layoutY="31.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="288.0" layoutY="98.0" mnemonicParsing="false" onAction="#addBulding" prefHeight="25.0" prefWidth="150.0" text="Dodaj do listy" />
+      <Button layoutX="288.0" layoutY="156.0" mnemonicParsing="false" onAction="#removeBulding" prefHeight="25.0" prefWidth="150.0" text="Usuń z listy" />
+      <ComboBox fx:id="list1" layoutX="288.0" layoutY="55.0" prefWidth="150.0" />
+      <Button layoutX="288.0" layoutY="316.0" mnemonicParsing="false" onAction="#checkBulding" prefHeight="25.0" prefWidth="150.0" text="Sprawdź" />
+      <TextArea fx:id="wynikBox" editable="false" layoutX="51.0" layoutY="248.0" prefHeight="135.0" prefWidth="200.0" />
+      <ComboBox fx:id="list2" layoutX="288.0" layoutY="265.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="299.0" layoutY="31.0" prefHeight="17.0" prefWidth="140.0" text="Lista Możliwych Budowli" />
+      <Label layoutX="67.0" layoutY="14.0" text="Lista zbudowanych budynków" />
+      <Label layoutX="299.0" layoutY="241.0" prefHeight="17.0" prefWidth="140.0" text="Sprawdzana Budowla" />
+      <Label layoutX="95.0" layoutY="232.0" prefHeight="17.0" prefWidth="102.0" text="Wynik Analizy" />
+   </children>
+</Pane>
